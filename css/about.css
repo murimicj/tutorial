@@ -1,0 +1,275 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Adjust this based on your navbar height */
+}
+
+/* Fixed Navbar Styling */
+.navbar {
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #106eea; /* Primary theme color */
+    color: white;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for visibility */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px; /* Set a fixed height for the logo */
+    max-height: 100px; /* Maximum height of the logo */
+    display: block; /* Block element to ensure proper alignment */
+    margin-left: 20px; /* Add left margin to give space from the left edge */
+    margin-right: 20px; /* Add right margin if you want space from nav links */
+    padding: 5px; /* Optional: add padding if you want some space around the logo */
+}
+
+/* Optional: Add hover effect for interaction */
+.logo:hover {
+    opacity: 0.8; /* Slightly dim the logo when hovered */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Nav links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+/* Styling for individual nav items */
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Link styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+/* Hover effect on nav links */
+.nav-links a:hover {
+    color: #f0f0f0; /* Slightly lighter shade on hover */
+}
+
+/* Add padding to body to prevent content from hiding under the fixed navbar */
+body {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    color: #106eea;
+    margin-bottom: 10px;
+}
+
+#about h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-item img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Ensure uniform size */
+    margin-bottom: 15px;
+    object-fit: contain; /* Ensures the image fits without distortion */
+}
+.about-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-item i {
+    font-size: 2.5em;
+    color: #106eea;
+    margin-bottom: 15px;
+}
+
+.about-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* General Section Styling */
+#services {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2em;
+    color: #106eea;
+    margin-bottom: 30px;
+}
+
+/* Service Container Styling */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 divs per row */
+    gap: 20px;
+}
+
+/* Individual Service Styling */
+.service {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 divs per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-container {
+        grid-template-columns: 1fr; /* 1 div per row on very small screens */
+    }
+}
+
+
+
+
+/* footer style */
+.footer {
+    background-color: #106eea; /* Primary theme color */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+ 
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f0f0f0; /* Slightly lighter shade on hover */
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}

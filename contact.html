@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" href="assets/contact.png">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/tropicana.png" alt="">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="job.html">Jobs</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+        
+                <div class="contact-map">
+                    <h3>Our Location</h3>
+                    <!-- Embed Google Map here -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127650.75534501449!2d36.93370702765199!3d-1.097709097723466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e5b27c66117%3A0xb6f8a7e126152c26!2sThika!5e0!3m2!1sen!2ske!4v1737311986414!5m2!1sen!2ske"
+                        width="100%" 
+                        height="300" 
+                        frameborder="0" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        aria-hidden="false" 
+                        tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        
+            <div class="contact-email">
+                <h3>Need Help? Email Us</h3>
+                <p>If you have any issues or need assistance, please don't hesitate to reach out to us at: <a href="mailto:support@yourcompany.com">info@tropicanamultiline.com</a></p>
+            </div>
+        </section>
+        
+        
+    </main>
+
+
+     <!-- footer section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/tropicana.png" alt="Logo">    
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="job.html">Jobs</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="instagram"><img src="assets/instagram.png" alt="instagram"></a>
+                <a href="#" aria-label="LinkedIn"><img src="assets/linked in.png" alt="LinkedIn"></a>
+                <a href="#" aria-label="whatsapp"><img src="assets/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <p>Support Email: <a href="">info@tropicanamultiline.com</a></p>
+            <p class="footer-note">&copy; 2025 MyWebsite. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

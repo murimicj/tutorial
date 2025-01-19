@@ -1,0 +1,211 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Adjust this based on your navbar height */
+}
+
+/* Fixed Navbar Styling */
+.navbar {
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #106eea; /* Primary theme color */
+    color: white;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for visibility */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px; /* Set a fixed height for the logo */
+    max-height: 100px; /* Maximum height of the logo */
+    display: block; /* Block element to ensure proper alignment */
+    margin-left: 20px; /* Add left margin to give space from the left edge */
+    margin-right: 20px; /* Add right margin if you want space from nav links */
+    padding: 5px; /* Optional: add padding if you want some space around the logo */
+}
+
+/* Optional: Add hover effect for interaction */
+.logo:hover {
+    opacity: 0.8; /* Slightly dim the logo when hovered */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Nav links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+/* Styling for individual nav items */
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Link styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+/* Hover effect on nav links */
+.nav-links a:hover {
+    color: #f0f0f0; /* Slightly lighter shade on hover */
+}
+
+/* Add padding to body to prevent content from hiding under the fixed navbar */
+body {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+}
+
+/* General Styling */
+#jobs {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+/* Jobs Heading Styling */
+.jobs-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.jobs-heading h1 {
+    font-size: 2.5em;
+    color: #106eea; /* Theme color */
+    margin-bottom: 15px;
+}
+
+.jobs-heading p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Application Procedure Styling */
+.application-procedure {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.application-procedure h2 {
+    font-size: 2em;
+    color: #106eea;
+    margin-bottom: 20px;
+}
+
+.application-procedure p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.application-procedure ul {
+    list-style: none;
+    padding: 0;
+}
+
+.application-procedure li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Psychometric Test Styling */
+.psychometric-test {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.psychometric-test h2 {
+    font-size: 2em;
+    color: #106eea;
+    margin-bottom: 20px;
+}
+
+.psychometric-test p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+
+/* footer style */
+.footer {
+    background-color: #106eea; /* Primary theme color */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+ 
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f0f0f0; /* Slightly lighter shade on hover */
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
